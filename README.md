@@ -7,7 +7,7 @@ O'zbek lotin alifbosini yangi rasmiy alifboga o'tkazish API'si
 [![Version](https://img.shields.io/badge/versiya-1.1.0-blue.svg)]()
 [![License](https://img.shields.io/badge/litsenziya-MIT-green.svg)]()
 
-[Demo](https://alifboo.jafaras.uz) • [Hujjatlar](#qanday-ishlaydi) • [Misollar](#kod-misollari)
+[QO'LLANMA](https://alifboo.jafaras.uz) • [Hujjatlar](#qanday-ishlaydi) • [Misollar](#kod-misollari)
 
 </div>
 
