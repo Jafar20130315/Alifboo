@@ -35,3 +35,18 @@ Sayt, ilova yoki botingizda o'zbek matnini yangi alifboga o'tkazish kerak bo'lsa
 API'ga matn yuborasiz, u sizga konvertatsiya qilingan matnni qaytaradi. Hammasi shu.
 
 **So'rov:**
+POST https://alifboo.jafaras.uz/convert
+Content-Type: application/json
+{
+"text": "O'zbekiston Respublikasi"
+}
+
+**Javob:**
+```json
+{
+  "success": true,
+  "original": "O'zbekiston Respublikasi",
+  "converted": "Özbekiston Respublikasi"
+}
+
+
