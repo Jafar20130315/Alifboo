@@ -2,40 +2,36 @@
 
 # 🔤 Alifboo
 
-**Uzbek Alphabet Converter API**
+O'zbek lotin alifbosini yangi rasmiy alifboga o'tkazish API'si
 
-[![Version](https://img.shields.io/badge/version-1.1.0-blue.svg)](https://github.com/jafaras/alifboo)
-[![Cloudflare Workers](https://img.shields.io/badge/Cloudflare-Workers-orange.svg)](https://workers.cloudflare.com)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Version](https://img.shields.io/badge/versiya-1.1.0-blue.svg)]()
+[![License](https://img.shields.io/badge/litsenziya-MIT-green.svg)]()
 
-Конвертирует узбекский латинский текст из старого написания (O'/G'/Sh/Ch) в новый официальный алфавит (Ö/Ğ/Ş/Ç)
-
-[Демо](https://alifboo.jafaras.uz) • [Документация](#документация) • [Примеры](#примеры-кода)
+[Demo](https://alifboo.jafaras.uz) • [Hujjatlar](#qanday-ishlaydi) • [Misollar](#kod-misollari)
 
 </div>
 
 ---
 
-## 📖 Описание
+## Alifboo nima?
 
-**Alifboo** — это быстрый и надёжный API для конвертации узбекского текста. Работает на edge-серверах Cloudflare по всему миру, обеспечивая минимальную задержку ответа (< 100 мс из любой точки мира).
+Alifboo — bu oddiy va tez ishlaydigan API. Eski yozuvdagi o'zbek lotin matnini (O', G', Sh, Ch) yangi rasmiy alifboga (Ö, Ğ, Ş, Ç) o'tkazib beradi.
 
-### Возможности
+Masalan:
 
-- ✅ Конвертация одной строки
-- ✅ Batch-конвертация (до 500 строк за раз)
-- ✅ Конвертация HTML с сохранением тегов
-- ✅ Rate limiting для защиты от злоупотреблений
-- ✅ CORS для использования из браузера
-- ✅ Живое демо на главной странице
+| Kirish | Natija |
+|--------|--------|
+| `O'zbekiston` | `Özbekiston` |
+| `G'afur G'ulom` | `Ğafur Ğulom` |
+| `Shavkat Mirziyoyev` | `Şavkat Mirziyoyev` |
+| `Chimyon` | `Çimyon` |
+
+Sayt, ilova yoki botingizda o'zbek matnini yangi alifboga o'tkazish kerak bo'lsa — Alifboo shu ishni qiladi. Bir HTTP so'rov yuborasiz, tayyor natijani olasiz.
 
 ---
 
-## 🚀 Быстрый старт
+## Qanday ishlaydi
 
-### 1. Конвертация одной строки
+API'ga matn yuborasiz, u sizga konvertatsiya qilingan matnni qaytaradi. Hammasi shu.
 
-```bash
-curl -X POST https://alifboo.jafaras.uz/convert \
-  -H "Content-Type: application/json" \
-  -d '{"text": "O'\''zbekiston Respublikasi"}'
+**So'rov:**
